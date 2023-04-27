@@ -4,10 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:tr": "ng serve --configuration=tr",
+    "start:de": "ng serve --configuration=de",
     "build": "ng build",
+    "build:tr": "ng build --configuration=tr",
+    "build:de": "ng build --configuration=de",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "i18n:extract": "ng extract-i18n"
+    "i18n:extract": "ng extract-i18n --output-path src/locale"
   },
   "private": true,
   "dependencies": {
