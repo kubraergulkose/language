@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="dashboard-header">
+        <div class="dashboard-header-info">
+            <div class="dashboard-header-info-text">Good Morning, {{name}}</div>
+            <div class="dashboard-header-info-bottom">
+                <div>System Info</div>
+                <div class="dashboard-header-info-bottom-right">
+                    <div class="info-round-open">{{openProduction}}</div>
+                    <span class="info-text">Open Production Orders</span>
+                </div>
+                <div class="dashboard-header-info-bottom-right">
+                    <div class="info-round-matrix">{{matrixContainers}}</div>
+                    <span class="info-text">Matrix Containers booked in</span>
+                </div>
+                <div class="dashboard-header-info-bottom-right">
+                    <div class="info-round-producing">{{producingMachines}}</div>
+                    <span class="info-text">Producing Machines</span>
+                </div>
+            </div>
+           
+        </div>
+        <div class="dashboard-header-date">
+            <div class="dashboard-header-date-hour">{{now | date: 'h:mm' }}</div>
+            <div class="dashboard-header-date-short">{{now | date: 'dd MMMM yyyy' }}</div>
+           
+        </div>
+    </div>
+    <div class="tile open-transport"></div>
+    <div class="tile software-modules"></div>
+    <div class="tile reserved-transfer"></div>
+    <div class="tile message-system"></div>
+</div>

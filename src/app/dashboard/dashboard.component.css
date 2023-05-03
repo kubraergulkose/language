@@ -1,0 +1,131 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 20px;
+    grid-template-areas:
+    "dah dah dah dah dah dah dah dah dah"
+    "ot ot ot ot ot som som som som"
+    "ot ot ot ot ot som som som som"
+    "ref ref ref ref mes mes mes mes mes"
+    "ref ref ref ref mes mes mes mes mes"
+    "ref ref ref ref mes mes mes mes mes";
+}
+
+.dashboard-header {
+  grid-area: dah;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-header-info-text {
+    font-size: 25px;
+    line-height:30px;
+
+}
+
+.dashboard-header-info-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.dashboard-header-info-bottom-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-round-open {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.info-round-matrix {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.info-round-producing {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.info-text {
+    width: 50px;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.dashboard-header-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dashboard-header-date-hour {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+.dashboard-header-date-short {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+.open-transport{
+    grid-area: ot;
+}
+
+.software-modules{
+    grid-area: som;
+}
+
+.reserved-transfer{
+    grid-area: ref;
+}
+
+.message-system{
+    grid-area: mes;
+}
+
