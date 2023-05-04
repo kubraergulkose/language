@@ -1,4 +1,4 @@
-.container{
+.container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -6,19 +6,19 @@
     padding: 20px;
     gap: 20px;
     grid-template-areas:
-    "dah dah dah dah dah dah dah dah dah"
-    "ot ot ot ot ot som som som som"
-    "ot ot ot ot ot som som som som"
-    "ref ref ref ref mes mes mes mes mes"
-    "ref ref ref ref mes mes mes mes mes"
-    "ref ref ref ref mes mes mes mes mes";
+        "dah dah dah dah dah dah dah dah dah"
+        "ot ot ot ot ot som som som som"
+        "ot ot ot ot ot som som som som"
+        "ref ref ref ref mes mes mes mes mes"
+        "ref ref ref ref mes mes mes mes mes"
+        "ref ref ref ref mes mes mes mes mes";
 }
 
 .dashboard-header {
-  grid-area: dah;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    grid-area: dah;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .dashboard-header-info {
@@ -28,8 +28,9 @@
 }
 
 .dashboard-header-info-text {
-    font-size: 25px;
-    line-height:30px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 500;
 
 }
 
@@ -46,44 +47,30 @@
     align-items: center;
 }
 
-.info-round-open {
+.info-round {
     width: 30px;
     height: 30px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: purple;
     color: white;
     font-size: 17px;
     line-height: 20px;
 }
 
-.info-round-matrix {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: orange;
-    color: white;
-    font-size: 17px;
-    line-height: 20px;
+.background-purp {
+    background-color: #892CFF;
 }
 
-.info-round-producing {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: greenyellow;
-    color: white;
-    font-size: 17px;
-    line-height: 20px;
+.background-yellow {
+    background-color: #EF9712;
 }
+
+.background-green {
+    background-color: #00B81D;
+}
+
 
 .info-text {
     width: 50px;
@@ -113,19 +100,94 @@
 }
 
 
-.open-transport{
+.open-transport {
     grid-area: ot;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
 }
 
-.software-modules{
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #444444;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.infos-info {
+    width: auto;
+    height: 27px;
+    padding: 0 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.dashboard-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    gap: 10px;
+
+}
+
+.software-modules {
     grid-area: som;
+    gap: 20px;
+    overflow: auto;
+
 }
 
-.reserved-transfer{
+.reserved-transfer {
     grid-area: ref;
+    gap: 20px;
+    overflow: auto;
+
 }
 
-.message-system{
+.message-system {
     grid-area: mes;
+    gap: 20px;
+    overflow: auto;
+  
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background: #FFFFFF;
+    border: 1px solid #515151;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}

@@ -5,15 +5,15 @@
             <div class="dashboard-header-info-bottom">
                 <div>System Info</div>
                 <div class="dashboard-header-info-bottom-right">
-                    <div class="info-round-open">{{openProduction}}</div>
+                    <div class="info-round background-purp">{{openProduction}}</div>
                     <span class="info-text">Open Production Orders</span>
                 </div>
                 <div class="dashboard-header-info-bottom-right">
-                    <div class="info-round-matrix">{{matrixContainers}}</div>
+                    <div class="info-round background-yellow">{{matrixContainers}}</div>
                     <span class="info-text">Matrix Containers booked in</span>
                 </div>
                 <div class="dashboard-header-info-bottom-right">
-                    <div class="info-round-producing">{{producingMachines}}</div>
+                    <div class="info-round background-green">{{producingMachines}}</div>
                     <span class="info-text">Producing Machines</span>
                 </div>
             </div>
@@ -25,8 +25,122 @@
            
         </div>
     </div>
-    <div class="tile open-transport"></div>
-    <div class="tile software-modules"></div>
-    <div class="tile reserved-transfer"></div>
-    <div class="tile message-system"></div>
+    <div class="tile open-transport">
+        <div class="header">
+            <div class="title">Open Transport Orders</div>
+            <div class="infos">
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Queued</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Executing</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div class="dashboard-text">Picked Up</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Delivered</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Queued: 09.01 09:17</div>
+                <div class="dashboard-text">Executed: 09.01 10:01</div>
+                <div class="dashboard-text">Picked Up: ---</div>
+                <div class="dashboard-text">Delivered: ---</div>
+            </div>
+        </div>
+    </div>
+    <div class="tile software-modules">
+        <div class="header">
+            <div class="title">Software Modules</div>
+            <div class="infos">
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Running</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Paused</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div class="dashboard-text">Stoped</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Transport Manager</div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Envireonment</div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Cell Manager</div>
+            </div>
+        </div>
+    </div>
+    <div class="tile reserved-transfer">
+        <div class="header">
+            <div class="title">Reserved Transfer Points</div>
+            <div class="infos">
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>For Pick Up</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>For Deliver</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Cell 11 Rack 01</div>
+            </div>
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">Finished Part Rack 04</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="tile message-system">
+        <div class="header">
+            <div class="title">Message System</div>
+            <div class="infos">
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Message</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Warning</div>
+                </div>
+                <div class="infos-info">
+                    <div class="infos-info-icon"></div>
+                    <div>Error</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <div class="content-item-icon"></div>
+                <div class="dashboard-text">09.01 08:15 - Cell N150</div>
+            </div>
+
+
+        </div>
+    </div>
 </div>
